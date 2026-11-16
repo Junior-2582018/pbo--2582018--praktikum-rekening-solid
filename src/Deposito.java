@@ -9,11 +9,11 @@ public class Deposito extends Rekening implements BerBunga {
         this.bunga = bunga;
     }
 
+    // Exception in thread "main" java.lang.UnsupportedOperationException:
+// Deposito tidak bisa ditarik
     @Override
     public boolean tarik(int jumlah) {
-        throw new UnsupportedOperationException(
-                "Deposito tidak bisa ditarik"
-        );
+        return false;
     }
 
     @Override
