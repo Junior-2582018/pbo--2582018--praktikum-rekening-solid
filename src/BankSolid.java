@@ -15,12 +15,16 @@ public class BankSolid {
                 201, "Budi", 200000, 500000
         );
 
+        Deposito dewi = new Deposito(
+                301, "Dewi", 5000000, 4.0
+        );
+
         Rekening[] semua = {
-                ani, citra, budi
+                ani, citra, budi, dewi
         };
 
         BerBunga[] berbunga = {
-                ani, citra
+                ani, citra, dewi
         };
 
         ProsesAkhirBulan proses = new ProsesAkhirBulan();
